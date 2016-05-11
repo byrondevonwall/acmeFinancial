@@ -80,7 +80,7 @@ acmeApp.config(function($routeProvider, $locationProvider, $httpProvider){
     .when('/profile', {
       templateUrl: '/views/profile.html',
       controller: 'profileController',
-      publicAccess: true,
+      // publicAccess: true,
       resolve: {
         loggedin: loginCheck
       }
