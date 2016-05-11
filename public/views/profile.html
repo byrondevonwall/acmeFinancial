@@ -1,0 +1,22 @@
+<div class='profile-welcome'>
+  Welcome {{user.name.first}} {{user.name.last}}
+</div>
+<div class='profile-balance'>
+  Current Balance: <br> {{user.balance}}
+</div>
+<div class='profile-personal-info'>
+  <img ng-src='{{user.picture}}' alt='user pic'>
+  <span class='profile-info-text'>Age: {{user.age}}</span>
+  <span class='profile-info-text'>Eye Color: {{user.eyeColor}}</span>
+  <span class='profile-info-text'>Company: {{user.company}}</span>
+</div>
+<div class='profile-email'>
+  Email: {{user.email}}
+</div>
+<div class='profile-phone'>
+  Phone: {{user.phone}}
+</div>
+<div class='profile-address'>
+  Address: {{user.address}}
+</div>
+<button type='submit' ng-click='edit()'>Edit My Details</button>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="acmeApp">
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/assets/css/styles.css' />
+
+  </head>
+  <body>
+  	{{message}}
+    <ng-view></ng-view>
+
+    <script src='/bower_components/jquery/dist/jquery.js'></script>
+    <script src='/bower_components/angular/angular.js'></script>
+    <script src='/bower_components/angular-resource/angular-resource.js'></script>
+    <script src='/bower_components/angular-route/angular-route.js'></script>
+    <script src='/assets/js/app.js'></script>
+    <script src='/assets/js/loginController.js'></script>
+    <script src='/assets/js/profileController.js'></script>
+    <script src='/assets/js/editController.js'></script>
+  </body>
+</html>
