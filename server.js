@@ -20,7 +20,7 @@ passport.use(new LocalStrategy({
   usernameField: 'email', passwordField: 'password'
 },
   function(email, password, done){
-    // console.log(email, password, db('users').chain().filter({isActive: true}).find({email: email, password: password}).value());
+    console.log(email, password, {email: email, password: password}, db('users').chain().filter({isActive: true}).find({email: email, password: password}).value());
     var user = db('users').chain().filter({isActive: true}).find({email: email, password: password}).value()
     if(user != undefined)
       return done(null, user);
@@ -114,7 +114,7 @@ app.put('/users/:guid', function(req, res){
   .find({guid: req.params.guid})
   .assign({age: req.body.age, eyeColor: req.body.eyeColor, company: req.body.company, email: req.body.email, phone: req.body.phone, address: req.body.address, name:{first: req.body.name.first, last: req.body.name.last}})
   .value();
-  res.send(200);
+  res.sendStatus(200);
 });
 
 //make the app listen on the
