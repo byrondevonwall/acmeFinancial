@@ -2,3 +2,6 @@ node_modules/
 public/bower_components/
 public/assets/css/.sass-cache/
 public/assets/css/styles.css.map
+npm-debug.log
+.DS_Store
+/*.env
