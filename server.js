@@ -20,24 +20,12 @@ passport.use(new LocalStrategy({
   usernameField: 'email', passwordField: 'password'
 },
   function(email, password, done){
-    console.log(email, password, db('users').chain().filter({isActive: true}).find({email: email, password: password}).value());
+    // console.log(email, password, db('users').chain().filter({isActive: true}).find({email: email, password: password}).value());
     var user = db('users').chain().filter({isActive: true}).find({email: email, password: password}).value()
     if(user != undefined)
       return done(null, user);
 
     return done(null, false, {message: 'incorrect username/password'});
-    // function(err, user){
-    //   if(err){return done(err); };
-    //   if(!user){ return done(null, false, {message: "Unkonwn User " + e}); }
-    //   user.comparePassword(password, function(err, isMatch){
-    //     if(err) return done(err);
-    //     if(isMatch){
-    //       return done(null, user);
-    //     } else{
-    //       return done(null, false, {message: 'Invalid Password'});
-    //     }
-    //   });
-    // };
   }
 ));
 
@@ -67,12 +55,11 @@ var sess = {
 }
 
 
-// app.set('port', port);
+
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(favicon(__dirname + '/public/favicon.png'));
 app.use(cookieParser());
-// app.use(express.bodyParser());
 app.use(bodyParser.urlencoded({extended : true }));
 app.use(bodyParser.json());
 app.use(methodOverride('X-HTTP-Method-Override'));
@@ -134,4 +121,4 @@ app.put('/users/:guid', function(req, res){
 // app.use('/api', router);
 
 app.listen(port);
-console.log("ports@ " + port);
+console.log("port's @ " + port);

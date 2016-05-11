@@ -1,13 +1,8 @@
-$hdrbg: #0246a6;
-$bgdbg: #ebebeb;
-$btnbg: #3498db;
-
-body{
+body {
   box-sizing: border-box;
-  background-color: $bgdbg;
-
-  header{
-    background-color: $hdrbg;
+  background-color: #ebebeb; }
+  body header {
+    background-color: #0246a6;
     width: 100%;
     color: white;
     text-align: center;
@@ -15,28 +10,24 @@ body{
     top: 0;
     left: 0;
     font-size: 5em;
-    height: 12.5%;
-    .app-header-acme{
-      background-color: black;
-    }
-  }
-  .main-body{
+    height: 12.5%; }
+    body header .app-header-acme {
+      background-color: black; }
+  body .main-body {
     position: absolute;
     top: 12.5%;
     font-size: 3em;
     font-family: 'garmond', sans-serif;
-    font-weight: bold;
-    .profile-welcome{
-      line-height: 2em;
-    }
-    .profile-balance{
+    font-weight: bold; }
+    body .main-body .profile-welcome {
+      line-height: 2em; }
+    body .main-body .profile-balance {
       width: 100%;
       text-align: center;
       border-top: dotted 2px black;
       border-bottom: dotted 2px black;
       padding: 3% 0;
       width: 98%;
-      margin: 0 0 0 .5%;
-    }
-  }
-}
+      margin: 0 0 0 .5%; }
+
+/*# sourceMappingURL=styles.css.map */
