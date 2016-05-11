@@ -30,16 +30,12 @@
     "morgan": "^1.7.0",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
-    "serve-favicon": "^2.3.0",
-    "bower": "1.7.9"
+    "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
     "nodemon": "^1.9.2"
   },
    "engines": {
       "node": "5.4.1"
-  },
-  "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower install"
-}
+  }
 }
