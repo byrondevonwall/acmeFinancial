@@ -16,9 +16,9 @@ acmeApp.controller('editController', function($scope, $http, $location){
   });
 
   $scope.save = function(){
-    console.log({
-      age: $scope.user.age, eyeColor: $scope.user.eyeColor, company: $scope.user.company, email: $scope.user.email, phone: $scope.user.phone, address: $scope.user.address, name:{first: $scope.user.name.first, last: $scope.user.name.last}});
 
+    // console.log({
+    //   age: $scope.user.age, eyeColor: $scope.user.eyeColor, company: $scope.user.company, email: $scope.user.email, phone: $scope.user.phone, address: $scope.user.address, name:{first: $scope.user.name.first, last: $scope.user.name.last}});
 
     $http.put('/users/'+guid, {
       age: $scope.user.age, eyeColor: $scope.user.eyeColor, company: $scope.user.company, email: $scope.user.email, phone: $scope.user.phone, address: $scope.user.address, name:{first: $scope.user.name.first, last: $scope.user.name.last}

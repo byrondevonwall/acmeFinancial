@@ -98,7 +98,7 @@ app.post('/login', passport.authenticate('local'), function(req, res){
 
 //log out
 app.post('/logout', function(req, res){
-  res.logOut();
+  req.logout();
   res.send(200);
 });
 
@@ -115,7 +115,7 @@ app.put('/users/:guid', function(req, res){
   .assign({age: req.body.age, eyeColor: req.body.eyeColor, company: req.body.company, email: req.body.email, phone: req.body.phone, address: req.body.address, name:{first: req.body.name.first, last: req.body.name.last}})
   .value();
   res.send(200);
-})
+});
 
 //make the app listen on the
 // app.use('/api', router);

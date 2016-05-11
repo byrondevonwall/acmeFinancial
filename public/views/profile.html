@@ -10,24 +10,27 @@
 <article class='main-body'>
   <div class='profile-welcome'>
     Welcome {{user.name.first}} {{user.name.last}}!
+    <span class='logout' ng-click='logout()'>Logout</span>
   </div>
   <div class='profile-balance'>
     Current Balance: <br> {{user.balance}}
   </div>
   <div class='profile-personal-info'>
     <img ng-src='{{user.picture}}' alt='user pic' class='profile-pic'>
-    <span class='profile-info-text'>Age: {{user.age}}</span>
-    <span class='profile-info-text'>Eye Color: {{user.eyeColor}}</span>
-    <span class='profile-info-text'>Company: {{user.company}}</span>
+    <div class='profile-info-wrapper'>
+      <span class='profile-info-text'>Age: {{user.age}}</span>
+      <span class='profile-info-text'>Eye Color: {{user.eyeColor}}</span>
+      <span class='profile-info-text'>Company: {{user.company}}</span>
+    </div>
   </div>
-  <div class='profile-email'>
+  <div class='profile-bottom-info'>
     Email: {{user.email}}
   </div>
-  <div class='profile-phone'>
+  <div class='profile-bottom-info'>
     Phone: {{user.phone}}
   </div>
-  <div class='profile-address'>
-    Address: {{user.address}}
+  <div class='profile-bottom-info'>
+    Address: <span class='break-me'>{{user.address}}</span>
   </div>
-  <button type='submit' ng-click='edit()'>Edit My Details</button>
+  <button class='profile-submit-btn' type='submit' ng-click='edit()'>Edit My Details</button>
 </article>

@@ -7,14 +7,40 @@
   </div>
 </header>
 
-<form ng-submit='save()'>
-  <input type="text" placeholder="First Name" ng-model="user.name.first">
-  <input type="text" placeholder="Last Name" ng-model="user.name.last">
-  <input type="text" placeholder="Age" ng-model="user.age">
-  <input type="text" placeholder="Eye Color" ng-model="user.eyeColor">
-  <input type="text" placeholder="Company" ng-model="user.company">
-  <input type="text" placeholder="Email" ng-model="user.email">
-  <input type="text" placeholder="Phone" ng-model="user.phone">
-  <textarea placeholder="Address" ng-model="user.address"></textarea>
-  <button type="submit">Save</button>
-</form>
+<div class='main-body'>
+  <form ng-submit='save()'>
+    <div class='edit-wrap-full'>
+      <label class='edit-label'>First Name</label>
+      <input class='edit-input-full' type="text" placeholder="First Name" ng-model="user.name.first">
+    </div>
+    <div class='edit-wrap-full'>
+      <label class='edit-label'>Last Name</label>
+      <input class='edit-input-full' type="text" placeholder="Last Name" ng-model="user.name.last">
+    </div>
+    <div class='edit-wrap-half'>
+      <label class='edit-label'>Age</label>
+      <input class='edit-input-half' type="text" placeholder="Age" ng-model="user.age">
+    </div>
+    <div class='edit-wrap-half'>
+      <label class='edit-label'>Eye Color</label>
+      <input class='edit-input-half' type="text" placeholder="Eye Color" ng-model="user.eyeColor">
+    </div>
+    <div class='edit-wrap-full'>
+      <label class='edit-label'>Company</label>
+      <input class='edit-input-full' type="text" placeholder="Company" ng-model="user.company">
+    </div>
+    <div class='edit-wrap-full'>
+      <label class='edit-label'>Email</label>
+      <input class='edit-input-full' type="text" placeholder="Email" ng-model="user.email">
+    </div>
+    <div class='edit-wrap-full'>
+      <label class='edit-label'>Phone</label>
+      <input class='edit-input-full' type="text" placeholder="Phone" ng-model="user.phone">
+    </div>
+    <div class='edit-wrap-full'>
+      <label class='edit-label'>Address</label>
+      <textarea  class='edit-input-txtarea' placeholder="Address" ng-model="user.address"></textarea>
+    </div>
+    <button class='profile-submit-btn' type="submit">Save</button>
+  </form>
+</div>

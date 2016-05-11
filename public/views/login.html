@@ -1,5 +1,9 @@
+<img class='acme-logo' src='/assets/img/acme-shield.jpg' alt='acme financial logo'>
+
 <form ng-submit='login()'>
+  <label class='login-label'>Email</label>
   <input id='user-email' type='text' placeholder='Email' ng-model="user.email"/>
+  <label class='login-label'>Password</label>
   <input id='user-pass' type='password' placeholder="Password" ng-model="user.password"/>
-  <button type='submit'>Log In</button>
+  <button class='submit-btn' type='submit'>Log In</button>
 </form>

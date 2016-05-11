@@ -1,4 +1,4 @@
-acmeApp.controller('profileController', function($scope, $http, $location){
+acmeApp.controller('profileController', function($scope, $http, $location, $rootScope){
   //get logged users guid out of localStorage
   var guid = localStorage.getItem('guid');
   // console.log(guid);
