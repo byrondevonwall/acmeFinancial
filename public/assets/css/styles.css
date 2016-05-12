@@ -68,7 +68,7 @@ body {
     body header .app-header-acme {
       background-color: black;
       width: 30%;
-      margin: 4% 0 0 35%;
+      margin: 1% 0 0 35%;
       padding: 1% 0;
       border: solid thin white; }
       @media screen and (min-width: 1024px) {
@@ -185,17 +185,17 @@ body {
         margin: .5% 0 2% 2%;
         font-size: 1.5em;
         border-radius: .2em;
-        height: 275px; }
+        height: 200px; }
         @media screen and (min-width: 1024px) {
           body .main-body .edit-wrap-full .edit-input-txtarea {
             height: 75px; } }
     body .main-body .edit-wrap-half {
       display: inline-block;
-      width: 48%; }
+      width: 48vw; }
       body .main-body .edit-wrap-half .edit-label {
         padding: 4% 0 1% 5.2%; }
       body .main-body .edit-wrap-half .edit-input-half {
-        width: 95%;
+        width: 90%;
         margin: .5% 0 2% 5%;
         font-size: 1.5em;
         border-radius: .2em; }
