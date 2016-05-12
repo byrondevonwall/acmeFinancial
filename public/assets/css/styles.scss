@@ -103,7 +103,7 @@ body{
     font-size: 2.5em;
     font-family: 'garmond', sans-serif;
     font-weight: bold;
-    width: 100%;
+    width: 100vw;
     @media screen and (min-width: $break-large) {
       font-size: 1em;
     }
@@ -118,7 +118,6 @@ body{
       }
     }
     .profile-balance{
-      width: 100%;
       text-align: center;
       border-top: dotted 3px black;
       border-bottom: dotted 3px black;
@@ -197,12 +196,12 @@ body{
     .edit-wrap-full{
       width: 100%;
       // border: solid thin black;
-      margin: 2% 0 0 0;
+      margin: 1% 0 0 0;
       @media screen and (min-width: $break-large) {
         margin: 1% 0 0 0;
       }
       .edit-label{
-        padding: 4% 0 1% 2.2%;
+        padding: 2% 0 1% 2.2%;
         @media screen and (min-width: $break-large) {
           padding: 1% 0 1% 2.2%;
         }

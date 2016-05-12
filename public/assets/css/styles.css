@@ -84,7 +84,7 @@ body {
     font-size: 2.5em;
     font-family: 'garmond', sans-serif;
     font-weight: bold;
-    width: 100%; }
+    width: 100vw; }
     @media screen and (min-width: 1024px) {
       body .main-body {
         font-size: 1em; } }
@@ -97,7 +97,6 @@ body {
         margin: 0 2% 0 0;
         cursor: pointer; }
     body .main-body .profile-balance {
-      width: 100%;
       text-align: center;
       border-top: dotted 3px black;
       border-bottom: dotted 3px black;
@@ -163,12 +162,12 @@ body {
           width: 96%; } }
     body .main-body .edit-wrap-full {
       width: 100%;
-      margin: 2% 0 0 0; }
+      margin: 1% 0 0 0; }
       @media screen and (min-width: 1024px) {
         body .main-body .edit-wrap-full {
           margin: 1% 0 0 0; } }
       body .main-body .edit-wrap-full .edit-label {
-        padding: 4% 0 1% 2.2%; }
+        padding: 2% 0 1% 2.2%; }
         @media screen and (min-width: 1024px) {
           body .main-body .edit-wrap-full .edit-label {
             padding: 1% 0 1% 2.2%; } }
