@@ -210,7 +210,7 @@ body{
       .edit-input-full{
         width: 95%;
         margin: .5% 0 2% 2%;
-        font-size: 1.5em;
+        font-size: 1.2em;
         border-radius: .2em;
         @media screen and (min-width: $break-large) {
           margin: .25% 0 1% 2%;
@@ -219,7 +219,7 @@ body{
       .edit-input-txtarea{
         width: 95%;
         margin: .5% 0 2% 2%;
-        font-size: 1.5em;
+        font-size: 1.2em;
         border-radius: .2em;
         height: 200px;
         @media screen and (min-width: $break-large) {
@@ -237,7 +237,7 @@ body{
       .edit-input-half{
         width: 90%;
         margin: .5% 0 2% 5%;
-        font-size: 1.5em;
+        font-size: 1.2em;
         border-radius: .2em;
       }
     }

@@ -175,7 +175,7 @@ body {
       body .main-body .edit-wrap-full .edit-input-full {
         width: 95%;
         margin: .5% 0 2% 2%;
-        font-size: 1.5em;
+        font-size: 1.2em;
         border-radius: .2em; }
         @media screen and (min-width: 1024px) {
           body .main-body .edit-wrap-full .edit-input-full {
@@ -183,7 +183,7 @@ body {
       body .main-body .edit-wrap-full .edit-input-txtarea {
         width: 95%;
         margin: .5% 0 2% 2%;
-        font-size: 1.5em;
+        font-size: 1.2em;
         border-radius: .2em;
         height: 200px; }
         @media screen and (min-width: 1024px) {
@@ -197,7 +197,7 @@ body {
       body .main-body .edit-wrap-half .edit-input-half {
         width: 90%;
         margin: .5% 0 2% 5%;
-        font-size: 1.5em;
+        font-size: 1.2em;
         border-radius: .2em; }
 
 /*# sourceMappingURL=styles.css.map */
